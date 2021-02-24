@@ -54,9 +54,7 @@
 
 		<script>
 			$(document).ready(function() {
-				let outputFile = window.location.pathname.split("/").pop().slice(0, -5);
-
-				$.getJSON(`${outputFile}.json`, function(output) {
+				$.getJSON("Basisdata_0000_Norge_4258_MatrikkelenVegadresse_GML.zip.json", function(output) {
 					let counters = Object.entries(output.counters);
 
 					$("main table").DataTable({
